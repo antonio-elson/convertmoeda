@@ -37,12 +37,16 @@ gem 'jbuilder', '~> 2.5'
 gem 'popper_js', '~> 1.11.1'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'loofah', '2.0.3'
+gem 'method_source', '~> 0.8.2'
+gem 'rest-client'
+
 group :development, :test do
+  gem 'capybara'
+  gem 'rspec-rails', '~> 3.5'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 
-  gem 'capybara'
-  gem 'rspec-rails', '~> 3.5'
+
 end
 
 group :development do
